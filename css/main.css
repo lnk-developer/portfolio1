@@ -1,0 +1,1272 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+/*
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+*{margin: 0; padding: 0;}
+li{list-style: none}
+a{text-decoration: none; display: block}
+img{border: 0; display: block}
+
+body, header, section, footer, nav, div, h1, h2, h3, h4, h5, h6, p, table, tbody, tr, th, td, a, ul, ol, li{font-size: 16px; font-family:'Noto Sans KR', sans-serif; color: #333}
+
+
+
+
+@media screen and (min-width:1601px){
+    
+/*    header------------------------------------------*/
+    #header{position: fixed; width: 100%; height: 80px; left: 0; top: 0; z-index: 999 }
+    #header .header_wrap{position: relative; width: 1200px; margin: 0 auto;}
+    #header .header_wrap .top_logo{position: absolute; left: 0; top: 22px; width: 160px;  }
+    #header .header_wrap .top_logo img{width: 100%;}
+    #header .header_wrap .gnb{position: absolute; width: 50%; left: 340px;}
+    #header .header_wrap .gnb ul{overflow: hidden}
+    #header .header_wrap .gnb ul li{float: left; padding: 0 30px}
+    #header .header_wrap .gnb ul li a{text-align: center; line-height: 80px; color: #FFF; font-weight: 700;}
+    #header .header_wrap .gnb ul li:hover a{color:#15AD60}
+    #header .header_wrap .util{position: absolute; right: 0; top: 25px; cursor: pointer; display: none}
+    
+    
+    
+    
+    
+/*    sub nav---------------------------------------*/
+    .sub_nav{position: fixed; width: 100%; height: 300px; left: 0; top: 80px; background-color: rgba(255,255,255,0.7); z-index: 50; display: none}
+    .sub_nav .sub_nav_inner{position: relative; width: 1200px; height: 300px; margin: 0 auto; }
+    .sub_nav .sub_nav_inner>.dep1{position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 101; display: none}
+    .sub_nav .sub_nav_inner>.dep1>img{position: absolute; margin-top: 50px}
+    .sub_nav .sub_nav_inner>.dep1>li{position: relative; width: 160px; height: 50%; text-align: center; line-height: 150px; margin-left: 360px; border-right: 1px solid #DDD; cursor: pointer; font-weight: 700}
+    .sub_nav .sub_nav_inner>.dep1>li:hover{color: #15AD60}
+    .sub_nav .sub_nav_inner>.dep1>li:hover>a{color: #15AD60}
+    .sub_nav .sub_nav_inner>.introduce>li{height: 33.3%; line-height: 100px; cursor: pointer}
+    .sub_nav .sub_nav_inner>.bussiness>li>.dep2{position: absolute; width: 160px; left: 160px; top: 0; border-right: 1px solid #DDD; display: none; z-index: 102}
+    .sub_nav .sub_nav_inner>.bussiness>li>.tech{top: -150px}
+    .sub_nav .sub_nav_inner>.bussiness>li>.dep2>li>a{font-weight: 700}
+    
+    
+    .total_nav{position: fixed; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0.7); z-index: 99; display: none}
+    .total_nav .close_nav{position: absolute;right: 50px; top: 50px; }
+    .total_nav .close_nav>p{font-size: 50px; color: #FFF; transform: rotate(45deg); cursor: pointer}
+    .total_nav>ul{position: relative; width: 70%; margin: 10% auto; overflow: hidden}
+    .total_nav>ul>li{float: left; width: 23%; margin: 1%}
+    .total_nav>ul>li>a{font-size: 22px; color: #FFF; text-align: center; line-height: 2em;  border-bottom: 1px solid #FFF }
+    .total_nav>ul>li>ul>li>a{font-size: 18px; color: #FFF; text-align: center; line-height: 3em; }   
+    .total_nav>ul>li:first-child>ul>li>a::before{content: '·'; margin-right: 5px;}
+    .total_nav>ul>li>ul>li>ul>li>a{color: #FFF; text-align: center; line-height: 3em; }
+    .total_nav>ul>li>ul>li>ul{display: none}
+    
+    
+    
+    
+/*    top banner-----------------------------------    */
+    #top_banner{position: relative; width: 100%;}
+    #top_banner video{display: block; width: 100%; z-index: 0}
+    #top_banner .btn_controls{position: absolute; right: 10px; bottom: 50px}
+    #top_banner .btn_controls>ul{overflow: hidden}
+    #top_banner .btn_controls>ul>li{float: left; margin: 10px; cursor: pointer}
+    
+    
+    
+    
+    
+/*    행복 실현 글로번 건설리더------------------------------------    */
+    #global_leader{position: relative; width:100%; height: 800px; background-color: #2D2D2D; overflow: hidden}
+    #global_leader .bg_global{position: absolute; right: -260px; top: 0}
+    #global_leader .triangle{transition-duration: 5s}
+    #global_leader .moving_bg1{position: absolute; left: 0; top: 0}
+    #global_leader .moving_bg2{position: absolute; right: 0; bottom: 0; width: 500px}
+    
+    #global_leader .contents_gl{position: relative; width: 50%; margin: 0 auto; margin-left: 10%}
+    #global_leader .contents_gl .content_title{position: relative;font-size: 36px; color: #FFF; margin-top: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 80px; opacity: 0} 
+    
+    #global_leader .contents_gl .symbol_box{position: relative; width: 100%; height: 600px; }
+    #global_leader .contents_gl .symbol_box .main_symbol{position: absolute; top: 50px;left: 260px}
+    #global_leader .contents_gl .symbol_box .slogan{position: absolute; font-size: 24px; text-align: center; line-height: 1.2em; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); left:300px; top: 420px; opacity: 0}    
+    #global_leader .contents_gl .symbol_box .text_box{position: absolute; width: 230px; left: 350px; top: 200px; display: none; transition-duration: 1s}
+    #global_leader .contents_gl .symbol_box .text_box>.title_deco{position: absolute; width: 50px; height: 50px; left: -30px; top: 12px; background-color: #15AD60;}
+    #global_leader .contents_gl .symbol_box .text_box>h4{position: relative; font-size: 22px; text-align: left; line-height: 1.2em; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); border-bottom: 2px solid #15AD60; ; margin-bottom: 10px; padding-bottom: 8px;}
+    #global_leader .contents_gl .symbol_box .text_box>p{color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); text-align: left; line-height: 1.6em; font-weight: 400; display: none}
+    #global_leader .contents_gl .symbol_box>.text_box1{width: 180px}
+    #global_leader .contents_gl .symbol_box>.text_box1>.title_deco{left: 160px}
+    #global_leader .contents_gl .symbol_box>.text_box1>h4{text-align: right}
+    #global_leader .contents_gl .symbol_box>.text_box1>p{text-align: right}
+/*
+    #global_leader .contents_gl .symbol_box>.text_box2{right: 150px; top: 40px}
+    #global_leader .contents_gl .symbol_box>.text_box3{bottom: 0; right: 180px}
+*/
+    
+    
+    #m_global_leader{display: none}
+    
+    
+/*   사업영역 ---------------------------------------------------- */
+    #bussiness{position: relative; width: 100%; height: 600px; margin-top: 100px;}
+    
+    
+    #bussiness .l_btn{position: absolute; left:585px; bottom: 10px; margin-top: -25px; z-index: 10}
+    #bussiness .l_btn>img{margin: 0 auto}
+    #bussiness .r_btn{position: absolute; left: 630px; bottom: 10px; margin-top: -25px; z-index: 10}
+    #bussiness .r_btn>img{margin: 0 auto}
+    
+    
+       
+    #bussiness .lnb_bs{position: absolute; left: 250px; top: 0; width: 330px; height: 600px; background-color: #15AD60; z-index: 20;}    
+    #bussiness .lnb_bs .white_deco{position: absolute; left: 0; top: 0; width: 100%; height: 187px; background-color: #FFF}
+    #bussiness .lnb_bs>h2{position: relative; font-size: 26px; color: #333; text-align: center; margin-top: 50px;}
+    #bussiness .lnb_bs .under_triangle{position: absolute; z-index: 10; width: 0; height: 0; border-top: 40px solid #FFF; border-left: 165px solid transparent; border-right: 165px solid transparent; margin-top: 99px} 
+    #bussiness .lnb_bs .category{position: absolute; width: 330px; }
+    #bussiness .lnb_bs .category .ca_title{font-size: 36px; line-height: 1.6em; text-align: center}
+    #bussiness .lnb_bs .category .ca_list{margin-top: 130px}
+    #bussiness .lnb_bs .category .ca_list>li{font-size: 22px; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); text-align: center; line-height: 1.8em; cursor: pointer}
+    #bussiness .lnb_bs .category .ca_list>li:hover{background-color: #148F50}
+    #bussiness .lnb_bs .ca_cons{display: none}
+    
+    #bussiness .contents_bs{position: relative; overflow: hidden}
+    #bussiness .contents_bs .slider_wrap_bs{position: relative; width: 3840px; }
+    #bussiness .contents_bs .slider_wrap_bs::after{content: ''; display: block; clear: both}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page{position: relative; float: left; width: 1920px; overflow: hidden; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.img_box{position: relative; width: 100%; height: 600px; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.img_box>li{position: absolute; left: 0; top: 0; width: 100%; height: 100% }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.img_box>li>img{width: 100%}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.slogan_bs{position: absolute; width: 750px; text-align: center; font-size: 36px; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); left: 50%; margin-left: -175px; top: 35%}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>a{position: absolute; font-size: 16px; color: #FFF; text-align: center; width: 400px; border: 1px solid #FFF; line-height: 3em;  left: 50%; margin-left: 0px; bottom: 150px}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.controls_bs{position: absolute; overflow: hidden; bottom: 10%; left: 50%; margin-left: -12px; width: 425px; height: 10px; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page:last-child>.controls_bs{width: 595px; margin-left: -97px}
+    
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.controls_bs>li{position: relative; float: left; width: 75px; height: 4px; background-color: #FFF; margin: 0 5px}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.controls_bs>li.select{background-color: #15AD60}
+    
+    
+    
+    
+    
+/*    아이콘 및 보도자료---------------------------------------------------    */
+    #brand_news{position: relative; overflow: hidden}
+    #brand_news .triangle{transition-duration: 5s}
+    #brand_news .moving_bg3{position: absolute; left: 0; top: 0; width: 30%; }
+    #brand_news .moving_bg4{position: absolute; right: 0; bottom: 0; width: 20%; }
+        
+    #brand_info{position: relative;}   
+    #brand_info .brand_wrap{position: relative; width: 1200px; margin: 0 auto; padding-top: 100px; margin-bottom: 50px}
+    #brand_info .brand_wrap .slogan_brand{position: relative; font-size: 36px; text-align: center; top: 100px; opacity: 0}
+    #brand_info .brand_wrap>p{position: relative; font-size: 18px; text-align: center; margin: 50px 0; top: 100px; opacity: 0}
+    #brand_info .brand_wrap .info_box{position: relative; overflow: hidden}
+    #brand_info .brand_wrap .info_box>li{position: relative; float: left; width: 21%; margin: 2%; padding: 0 2%; box-sizing: border-box; top: 200px; opacity: 0}
+    #brand_info .brand_wrap .info_box>li>img{position: absolute; left: 0; top: 0; width: 200px}
+    #brand_info .brand_wrap .info_box>li>h3{font-size: 16px; margin: 10px 0; margin-top: 200px}
+    #brand_info .brand_wrap .info_box>li>h4{font-size: 24px; text-align: right}
+    #brand_info .brand_wrap .info_box>li>h4>span{font-size: 60px; padding: 0 5px}
+    
+    
+    #news{position: relative; background-color: #2D2D2D}
+    #news .news_wrap{position: relative; width: 1200px; margin: 0 auto; padding-top: 50px}
+    #news .news_wrap .title_news{position: relative; font-size: 36px; text-align: center; color: #FFF; margin-bottom: 50px; top: 200px; opacity: 0}
+    #news .news_wrap .articles{position: relative; overflow: hidden}
+    #news .news_wrap .articles>li{position: relative; float: left; width: 48%; margin: 50px 1%; top: 200px; opacity: 0}
+    #news .news_wrap .articles>li>ul{overflow: hidden}
+    #news .news_wrap .articles>li>ul>li{float: left;}
+    #news .news_wrap .articles>li>ul>.img_news{width: 44%;; margin-right: 1%}
+    #news .news_wrap .articles>li>ul>.img_news>img{width: 100%}
+    #news .news_wrap .articles>li>ul>.text_news{width: 54%; margin-left: 1%; padding: 10px; box-sizing: border-box}
+    #news .news_wrap .articles>li>ul>.text_news>.news_title{font-size: 18px; text-align: left; color: #FFF; padding-bottom: 20px; border-bottom: 1px solid #15AD60}
+    #news .news_wrap .articles>li>ul>.text_news>.news_text{color: #FFF; padding: 20px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    #news .news_wrap .articles>li>ul>.text_news>.time{font-size: 14px; text-align: right; color: #FFF; }
+    
+    
+    
+    
+    
+/*     중간 배너------------------------------------------------------  */
+    #mid_banner{position: relative; width: 100%; height: 400px; background-image: url(../img/bgcover_wide.png), url(../img/mid_banner.jpg); background-position: center; background-size: cover}
+    #mid_banner .slogan_mid_banner{position: absolute; width: 850px; left: 50%; margin-left: -425px; top: 50%; margin-top: -50px;}
+    #mid_banner .slogan_mid_banner>h2{position: relative; font-size: 36px; color: #FFF; text-align: center; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 200px; opacity: 0}
+   
+    
+    
+    
+    
+/*    주요 프로젝트----------------------------------------------------    */
+    #projects{position: relative; width: 100%; height: 800px; overflow: hidden}
+    #projects .skew_wrap{position: absolute; width: 100%; height: 800px; left: 0; top: 0}
+    #projects .title_projects{position: relative; font-size: 36px; text-align: center; color: #FFF; padding-top: 50px; z-index: 99; top: 200px; opacity: 0}
+    
+    #projects .skew_wrap .bg_projects{position: absolute; width: 100%; height: 800px; left: 0; top: 0; overflow: hidden}
+    #projects .skew_wrap .bg_projects>li{position: absolute; float: left; left: 0; top: 0}
+    #projects .skew_wrap .bg_projects>li>img{width: 1920px}
+    #projects .skew_img{position: absolute; width: 2120px; height: 480px; left: 60%; margin-left: -2020px;  top: 50%; margin-top: -240px;}
+    
+    #projects .skew_wrap .bg_cover_wide{position: absolute; left: 0; top: 0}
+    #projects .skew_wrap .bg_cover_wide>img{width: 1920px}
+    #projects .skew_img::after{content: ""; display: block; clear: both}
+    #projects .skew_img>li{position: relative; float: left; transform: perspective(150px) rotateY(-5deg) scale(0.8); transition-duration: 0.7s}
+    #projects .skew_img>li:last-child{transform: perspective(150px) rotateY(0deg) scale(1);}
+    #projects .skew_text{position: absolute; width: 400px; left: 60%; top: 50%; margin-top: -150px; z-index: 99; }
+    #projects .skew_text>li{position: absolute; left: 0; top: 0; padding: 20px; display: none; background-color: #2D2D2D}
+    #projects .skew_text>li:last-child{display: block}
+    #projects .skew_text>li .title_deco{position: absolute; width: 70px; height: 70px; background-color: #15AD60; left: -13px; top: -13px}
+    #projects .skew_text>li h2{position: relative; font-size: 18px; color: #FFF; border-bottom: 2px solid #15AD60;}
+    #projects .skew_text>li p{font-size: 16px; color: #FFF; line-height: 1.6em; padding: 50px 0}
+   
+    #projects .prev_btn{position: absolute;  left: 50%; margin-left: -200px; bottom: 70px; z-index: 999; cursor: pointer;}
+    #projects .next_btn{position: absolute;  left: 50%; margin-left: 10px; bottom: 70px; z-index: 999; cursor: pointer}
+    #projects .btn_tooltip{position: absolute; top: -5px; color: #FFF; text-align: center; display: none}
+    #projects .prev_btn .btn_tooltip{right: 30px}
+    #projects .next_btn .btn_tooltip{left: 30px}
+    
+    
+    
+    
+/*    홍보영상 -----------------------------------------------------------    */
+    #prom_video{position: relative; padding: 50px; 0; overflow: hidden; margin-bottom: 50px}
+    #prom_video>.triangle{position: absolute; transition-duration: 1s}
+    #prom_video>.moving_bg5{left: 0; top: 0; width: 30%}
+    #prom_video>.moving_bg6{right: 0; bottom: 0}
+    #prom_video .video_wrap{position: relative; width: 100%; margin: 0 auto}
+    #prom_video .video_wrap>.title_prom{position: relative; font-size: 36px; text-align: center; margin-bottom: 50px; top: 200px; opacity: 0}
+    #prom_video .video_wrap>iframe{position: relative; display: block; width: 1100px; height: 615px ; margin: 0 auto; }
+    
+    
+    
+    
+    
+/*  하단 배너 ------------------------------------------------           */
+    #bottom_banner{position: relative; height: 400px; background-image: url(../img/bgcover.png), url(../img/bottom_banner.jpg); background-position: center; background-size: cover}
+    #bottom_banner .slogan_bottom_banner{position: absolute; width: 610px; left: 50%; margin-left: -305px; top: 50%; margin-top: -30px}
+    #bottom_banner .slogan_bottom_banner>h2{position: relative; font-size: 36px; color: #FFF; text-align: center; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 200px; opacity: 0}
+    
+    
+    
+    
+    
+/*  footer----------------------------------------------------------*/
+    #footer{position: relative; background-color: #2D2D2D; padding: 50px 0}
+    #footer .footer_wrap{position: relative; width: 1200px; margin: 0 auto}
+    
+    #footer .footer_wrap .bot_lnb{position: relative; overflow: hidden; margin: 20px 0}
+    #footer .footer_wrap .bot_lnb>li{float: left}
+    #footer .footer_wrap .bot_lnb>li>a{font-size: 12px; color: #FFF; text-align: center}
+    #footer .footer_wrap .bot_lnb>li>a::after{content: '|'; color: #FFF; padding: 0 15px}
+    #footer .footer_wrap .bot_lnb>li:hover>a{color: #15AD60}
+    #footer .footer_wrap .bot_lnb>li:last-child{position: a; width: 120px; font-size: 12px; color: #FFF; cursor: pointer}
+    #footer .footer_wrap .bot_lnb>li:last-child:hover{color: #15AD60}
+    
+    
+    #footer .footer_wrap .family{position: absolute; width: 120px; height: 180px; right: 500px; bottom: 20px; transition-duration: 1s; display: none;}
+    #footer .footer_wrap .family>li{position: relative;}
+    #footer .footer_wrap .family>li>a{font-size: 12px; color: #FFF; text-align: left; line-height: 2.5em; }
+/*
+    #footer .footer_wrap .bot_lnb>li:last-child>.family{position: absolute; width: 100%; left: 0 ; top: 0;}
+    #footer .footer_wrap .bot_lnb>li:last-child>.family>li>a{font-size: 12px; color: #FFF; text-align: left; line-height: 2.5em; }
+*/
+   
+    #footer .footer_wrap .common_info{position: relative; overflow: hidden; margin: 20px 0}
+    #footer .footer_wrap .common_info>li{float: left;}
+    #footer .footer_wrap .common_info>li>address{font-size: 12px; color: #FFF; font-style: normal;}
+    #footer .footer_wrap .common_info>li>p{font-size: 12px; color: #FFF; }
+    #footer .footer_wrap .common_info>li>.info_text::after{content: '|'; padding: 0 10px}
+    #footer .footer_wrap .bot_logo{width: 100px;}
+    #footer .footer_wrap .bot_logo>img{width: 100%}
+    #footer .footer_wrap .copyright{position: absolute; font-size: 12px; color: #FFF; right: 0; bottom: 80px}
+    #footer .footer_wrap .copyright>span{color: #15AD60}
+    #footer .footer_wrap .sns_icons{position: absolute; overflow: hidden; right: 0; bottom: 0}
+    #footer .footer_wrap .sns_icons>li{float: left; margin-left: 20px}
+    #footer .footer_wrap .sns_icons>li>a>img{width: 100%}
+    
+    
+}
+
+
+@media screen and (min-width:1201px) and (max-width:1600px) {
+    
+/*    header------------------------------------------*/
+    #header{position: fixed; width: 100%; height: 80px; left: 0; top: 0; z-index: 999 }
+    #header .header_wrap{position: relative; width: 1200px; margin: 0 auto;}
+    #header .header_wrap .top_logo{position: absolute; left: 0; top: 22px; width: 160px;  }
+    #header .header_wrap .top_logo img{width: 100%;}
+    #header .header_wrap .gnb{position: absolute; width: 50%; left: 340px;}
+    #header .header_wrap .gnb ul{overflow: hidden}
+    #header .header_wrap .gnb ul li{float: left; padding: 0 30px}
+    #header .header_wrap .gnb ul li a{text-align: center; line-height: 80px; color: #FFF; font-weight: 700;}
+    #header .header_wrap .gnb ul li:hover a{color:#15AD60}
+    #header .header_wrap .util{position: absolute; right: 0; top: 25px; cursor: pointer; display: none}
+    
+    
+    
+    
+    
+/*    sub nav---------------------------------------*/
+    .sub_nav{position: fixed; width: 100%; height: 400px; left: 0; top: 80px; background-color: rgba(255,255,255,0.7); z-index: 50; display: none}
+    .sub_nav .sub_nav_inner{position: relative; width: 1200px; height: 400px; margin: 0 auto; }
+    .sub_nav .sub_nav_inner>.dep1{position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 101; display: none}
+    .sub_nav .sub_nav_inner>.dep1>img{position: absolute; margin-top: 100px}
+    .sub_nav .sub_nav_inner>.dep1>li{position: relative; width: 160px; height: 50%; text-align: center; line-height: 200px; margin-left: 360px; border-right: 1px solid #DDD; cursor: pointer; font-weight: 700}
+   
+    .sub_nav .sub_nav_inner>.introduce>li{height: 33.3%; line-height: 133px;cursor: pointer}
+    .sub_nav .sub_nav_inner>.bussiness>li>.dep2{position: absolute; width: 160px; left: 160px; top: 0; border-right: 1px solid #DDD; display: none; z-index: 102}
+    .sub_nav .sub_nav_inner>.bussiness>li>.tech{top: -200px}
+    .sub_nav .sub_nav_inner>.bussiness>li>.dep2>li>a{font-weight: 700}
+    
+    
+    .total_nav{position: fixed; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0.7); z-index: 99; display: none}
+    .total_nav .close_nav{position: absolute;right: 50px; top: 50px; }
+    .total_nav .close_nav>p{font-size: 50px; color: #FFF; transform: rotate(45deg); cursor: pointer}
+    .total_nav>ul{position: relative; width: 70%; margin: 10% auto; overflow: hidden}
+    .total_nav>ul>li{float: left; width: 23%; margin: 1%}
+    .total_nav>ul>li>a{font-size: 22px; color: #FFF; text-align: center; line-height: 2em;  border-bottom: 1px solid #FFF }
+    .total_nav>ul>li>ul>li>a{font-size: 18px; color: #FFF; text-align: center; line-height: 3em; }   
+    .total_nav>ul>li:first-child>ul>li>a::before{content: '·'; margin-right: 5px;}
+    .total_nav>ul>li>ul>li>ul>li>a{color: #FFF; text-align: center; line-height: 3em; }
+    .total_nav>ul>li>ul>li>ul{display: none}
+    
+    
+    
+    
+/*    top banner-----------------------------------    */
+    #top_banner{position: relative; width: 100%;}
+    #top_banner video{display: block; width: 100%; z-index: 0}
+    #top_banner .btn_controls{position: absolute; right: 10px; bottom: 50px}
+    #top_banner .btn_controls>ul{overflow: hidden}
+    #top_banner .btn_controls>ul>li{float: left; margin: 10px; cursor: pointer}
+    
+    
+    
+    
+    
+/*    행복 실현 글로번 건설리더------------------------------------    */
+    #global_leader{position: relative; width:100%; height: 800px; background-color: #2D2D2D; overflow: hidden}
+    #global_leader .bg_global{position: absolute; right: -260px; top: 0}
+    #global_leader .triangle{transition-duration: 5s}
+    #global_leader .moving_bg1{position: absolute; left: 0; top: 0}
+    #global_leader .moving_bg2{position: absolute; right: 0; bottom: 0; width: 500px}
+    
+    #global_leader .contents_gl{position: relative; width: 50%; margin: 0 auto; margin-left: 10%}
+    #global_leader .contents_gl .content_title{position: relative;font-size: 36px; color: #FFF; margin-top: 100px; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 80px; opacity: 0} 
+    
+    #global_leader .contents_gl .symbol_box{position: relative; width: 100%; height: 600px; }
+    #global_leader .contents_gl .symbol_box .main_symbol{position: absolute; top: 50px;left: 260px}
+    #global_leader .contents_gl .symbol_box .slogan{position: absolute; font-size: 24px; text-align: center; line-height: 1.2em; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); left:300px; top: 420px; opacity: 0}    
+    #global_leader .contents_gl .symbol_box .text_box{position: absolute; width: 230px; left: 350px; top: 200px; display: none; transition-duration: 1s}
+    #global_leader .contents_gl .symbol_box .text_box>.title_deco{position: absolute; width: 50px; height: 50px; left: -30px; top: 12px; background-color: #15AD60;}
+    #global_leader .contents_gl .symbol_box .text_box>h4{position: relative; font-size: 22px; text-align: left; line-height: 1.2em; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); border-bottom: 2px solid #15AD60; ; margin-bottom: 10px; padding-bottom: 8px;}
+    #global_leader .contents_gl .symbol_box .text_box>p{color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); text-align: left; line-height: 1.6em; font-weight: 400; display: none}
+    #global_leader .contents_gl .symbol_box>.text_box1{width: 180px}
+    #global_leader .contents_gl .symbol_box>.text_box1>.title_deco{left: 160px}
+    #global_leader .contents_gl .symbol_box>.text_box1>h4{text-align: right}
+    #global_leader .contents_gl .symbol_box>.text_box1>p{text-align: right}
+/*
+    #global_leader .contents_gl .symbol_box>.text_box2{right: 150px; top: 40px}
+    #global_leader .contents_gl .symbol_box>.text_box3{bottom: 0; right: 180px}
+*/
+    
+    
+    #m_global_leader{display: none}
+    
+    
+/*   사업영역 ---------------------------------------------------- */
+    #bussiness{position: relative; width: 100%; height: 400px; margin-top: 100px; overflow: hidden}
+    
+    
+    #bussiness .l_btn{position: absolute; left:455px; bottom: 10px; margin-top: -25px; z-index: 10}
+    #bussiness .l_btn>img{margin: 0 auto}
+    #bussiness .r_btn{position: absolute; left: 500px; bottom: 10px; margin-top: -25px; z-index: 10}
+    #bussiness .r_btn>img{margin: 0 auto}
+    
+    
+       
+    #bussiness .lnb_bs{position: absolute; left: 200px; top: 0; width: 200px; height: 400px; background-color: #15AD60; z-index: 20;}    
+    #bussiness .lnb_bs .white_deco{position: absolute; left: 0; top: 0; width: 100%; height: 130px; background-color: #FFF}
+    #bussiness .lnb_bs>h2{position: relative; font-size: 22px; color: #333; text-align: center; margin-top: 20px;}
+    #bussiness .lnb_bs .under_triangle{position: absolute; z-index: 10; width: 0; height: 0; border-top: 20px solid #FFF; border-left: 100px solid transparent; border-right: 100px solid transparent; margin-top:78px} 
+    #bussiness .lnb_bs .category{position: absolute; width: 200px; }
+    #bussiness .lnb_bs .category .ca_title{font-size: 32px; line-height: 1.6em; text-align: center}
+    #bussiness .lnb_bs .category .ca_list{margin-top: 70px}
+    #bussiness .lnb_bs .category .ca_list>li{font-size: 16px; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); text-align: center; line-height: 1.8em; cursor: pointer}
+    #bussiness .lnb_bs .category .ca_list>li:hover{background-color: #148F50}
+    #bussiness .lnb_bs .ca_cons{display: none}
+    
+    #bussiness .contents_bs{position: relative; overflow: hidden}
+    #bussiness .contents_bs .slider_wrap_bs{position: relative; width: 200%; overflow: hidden}
+    #bussiness .contents_bs .slider_wrap_bs::after{content: ''; display: block; clear: both}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page{position: relative; float: left; width: 50%;  }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.img_box{position: relative; width: 100%; height: 400px; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.img_box>li{position: absolute; left: 0; top: 0; width: 100%; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.img_box>li>img{}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.slogan_bs{position: absolute; width: 750px; text-align: center; font-size: 22px; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); left: 50%; margin-left: -275px; top: 35%}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>a{position: absolute; font-size: 14px; color: #FFF; text-align: center; width: 300px; border: 1px solid #FFF; line-height: 2em; left: 50%; margin-left: -50px; bottom: 150px}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.controls_bs{position: absolute; overflow: hidden; bottom: 10%; left: 50%; margin-left: -12px; width: 225px; height: 10px; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page:last-child>.controls_bs{width: 595px; left: 50%; margin-left: -55px}
+    
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.controls_bs>li{position: relative; float: left; width: 35px; height: 4px; background-color: #FFF; margin: 0 5px}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.controls_bs>li.select{background-color: #15AD60}
+    
+    
+/*    아이콘 및 보도자료---------------------------------------------------    */
+    #brand_news{position: relative; overflow: hidden}
+    #brand_news .triangle{transition-duration: 5s}
+    #brand_news .moving_bg3{position: absolute; left: 0; top: 0; width: 30%; }
+    #brand_news .moving_bg4{position: absolute; right: 0; bottom: 0; width: 20%; }
+        
+    #brand_info{position: relative;}   
+    #brand_info .brand_wrap{position: relative; width: 1200px; margin: 0 auto; padding-top: 100px; margin-bottom: 50px}
+    #brand_info .brand_wrap .slogan_brand{position: relative; font-size: 36px; text-align: center; top: 100px; opacity: 0}
+    #brand_info .brand_wrap>p{position: relative; font-size: 18px; text-align: center; margin: 50px 0; top: 100px; opacity: 0}
+    #brand_info .brand_wrap .info_box{position: relative; overflow: hidden}
+    #brand_info .brand_wrap .info_box>li{position: relative; float: left; width: 21%; margin: 2%; padding: 0 2%; box-sizing: border-box; top: 200px; opacity: 0}
+    #brand_info .brand_wrap .info_box>li>img{position: absolute; left: 0; top: 0; width: 200px}
+    #brand_info .brand_wrap .info_box>li>h3{font-size: 16px; margin: 10px 0; margin-top: 200px}
+    #brand_info .brand_wrap .info_box>li>h4{font-size: 24px; text-align: right}
+    #brand_info .brand_wrap .info_box>li>h4>span{font-size: 60px; padding: 0 5px}
+    
+    
+    #news{position: relative; background-color: #2D2D2D}
+    #news .news_wrap{position: relative; width: 1200px; margin: 0 auto; padding-top: 50px}
+    #news .news_wrap .title_news{position: relative; font-size: 36px; text-align: center; color: #FFF; margin-bottom: 50px; top: 200px; opacity: 0}
+    #news .news_wrap .articles{position: relative; overflow: hidden}
+    #news .news_wrap .articles>li{position: relative; float: left; width: 48%; margin: 50px 1%; top: 200px; opacity: 0}
+    #news .news_wrap .articles>li>ul{overflow: hidden}
+    #news .news_wrap .articles>li>ul>li{float: left;}
+    #news .news_wrap .articles>li>ul>.img_news{width: 44%;; margin-right: 1%}
+    #news .news_wrap .articles>li>ul>.img_news>img{width: 100%}
+    #news .news_wrap .articles>li>ul>.text_news{width: 54%; margin-left: 1%; padding: 10px; box-sizing: border-box}
+    #news .news_wrap .articles>li>ul>.text_news>.news_title{font-size: 18px; text-align: left; color: #FFF; padding-bottom: 20px; border-bottom: 1px solid #15AD60}
+    #news .news_wrap .articles>li>ul>.text_news>.news_text{color: #FFF; padding: 20px 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    #news .news_wrap .articles>li>ul>.text_news>.time{font-size: 14px; text-align: right; color: #FFF; }
+    
+    
+    
+    
+    
+/*     중간 배너------------------------------------------------------  */
+    #mid_banner{position: relative; width: 100%; height: 400px; background-image: url(../img/bgcover_wide.png), url(../img/mid_banner.jpg); background-position: center; background-size: cover}
+    #mid_banner .slogan_mid_banner{position: absolute; width: 850px; left: 50%; margin-left: -425px; top: 50%; margin-top: -50px;}
+    #mid_banner .slogan_mid_banner>h2{position: relative; font-size: 36px; color: #FFF; text-align: center; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 200px; opacity: 0}
+   
+    
+    
+    
+    
+/*    주요 프로젝트----------------------------------------------------    */
+    #projects{position: relative; width: 100%; height: 800px; overflow: hidden}
+    #projects .skew_wrap{position: absolute; width: 100%; height: 800px; left: 0; top: 0}
+    #projects .title_projects{position: relative; font-size: 36px; text-align: center; color: #FFF; padding-top: 50px; z-index: 99; top: 200px; opacity: 0}
+    
+    #projects .skew_wrap .bg_projects{position: absolute; width: 100%; height: 800px; left: 0; top: 0; overflow: hidden}
+    #projects .skew_wrap .bg_projects>li{position: absolute; float: left; left: 0; top: 0}
+    #projects .skew_wrap .bg_projects>li>img{width: 1920px}
+    #projects .skew_img{position: absolute; width: 2120px; height: 480px; left: 60%; margin-left: -2020px;  top: 50%; margin-top: -240px;}
+    
+    #projects .skew_wrap .bg_cover_wide{position: absolute; left: 0; top: 0}
+    #projects .skew_wrap .bg_cover_wide>img{width: 1920px}
+    #projects .skew_img::after{content: ""; display: block; clear: both}
+    #projects .skew_img>li{position: relative; float: left; transform: perspective(150px) rotateY(-5deg) scale(0.8); transition-duration: 0.7s}
+    #projects .skew_img>li:last-child{transform: perspective(150px) rotateY(0deg) scale(1);}
+    #projects .skew_text{position: absolute; width: 400px; left: 60%; top: 50%; margin-top: -150px; z-index: 99; }
+    #projects .skew_text>li{position: absolute; left: 0; top: 0; padding: 20px; display: none; background-color: #2D2D2D}
+    #projects .skew_text>li:last-child{display: block}
+    #projects .skew_text>li .title_deco{position: absolute; width: 70px; height: 70px; background-color: #15AD60; left: -13px; top: -13px}
+    #projects .skew_text>li h2{position: relative; font-size: 18px; color: #FFF; border-bottom: 2px solid #15AD60;}
+    #projects .skew_text>li p{font-size: 16px; color: #FFF; line-height: 1.6em; padding: 50px 0}
+   
+    #projects .prev_btn{position: absolute;  left: 50%; margin-left: -200px; bottom: 70px; z-index: 999; cursor: pointer;}
+    #projects .next_btn{position: absolute;  left: 50%; margin-left: 10px; bottom: 70px; z-index: 999; cursor: pointer}
+    #projects .btn_tooltip{position: absolute; top: -5px; color: #FFF; text-align: center; display: none}
+    #projects .prev_btn .btn_tooltip{right: 30px}
+    #projects .next_btn .btn_tooltip{left: 30px}
+    
+    
+    
+    
+/*    홍보영상 -----------------------------------------------------------    */
+    #prom_video{position: relative; padding: 50px; 0; overflow: hidden; margin-bottom: 50px}
+    #prom_video>.triangle{position: absolute; transition-duration: 1s}
+    #prom_video>.moving_bg5{left: 0; top: 0; width: 30%}
+    #prom_video>.moving_bg6{right: 0; bottom: 0}
+    #prom_video .video_wrap{position: relative; width: 100%; margin: 0 auto}
+    #prom_video .video_wrap>.title_prom{position: relative; font-size: 36px; text-align: center; margin-bottom: 50px; top: 200px; opacity: 0}
+    #prom_video .video_wrap>iframe{position: relative; display: block; width: 1100px; height: 615px ; margin: 0 auto; }
+    
+    
+    
+    
+    
+/*  하단 배너 ------------------------------------------------           */
+    #bottom_banner{position: relative; height: 400px; background-image: url(../img/bgcover.png), url(../img/bottom_banner.jpg); background-position: center; background-size: cover}
+    #bottom_banner .slogan_bottom_banner{position: absolute; width: 610px; left: 50%; margin-left: -305px; top: 50%; margin-top: -30px}
+    #bottom_banner .slogan_bottom_banner>h2{position: relative; font-size: 36px; color: #FFF; text-align: center; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 200px; opacity: 0}
+    
+    
+    
+    
+    
+/*  footer----------------------------------------------------------*/
+    #footer{position: relative; background-color: #2D2D2D; padding: 50px 0}
+    #footer .footer_wrap{position: relative; width: 1200px; margin: 0 auto}
+    
+    #footer .footer_wrap .bot_lnb{position: relative; overflow: hidden; margin: 20px 0}
+    #footer .footer_wrap .bot_lnb>li{float: left}
+    #footer .footer_wrap .bot_lnb>li>a{font-size: 12px; color: #FFF; text-align: center}
+    #footer .footer_wrap .bot_lnb>li>a::after{content: '|'; color: #FFF; padding: 0 15px}
+    #footer .footer_wrap .bot_lnb>li:hover>a{color: #15AD60}
+    #footer .footer_wrap .bot_lnb>li:last-child{position: a; width: 120px; font-size: 12px; color: #FFF; cursor: pointer}
+    #footer .footer_wrap .bot_lnb>li:last-child:hover{color: #15AD60}
+    
+    
+    #footer .footer_wrap .family{position: absolute; width: 120px; height: 180px; right: 500px; bottom: 20px; transition-duration: 1s; display: none;}
+    #footer .footer_wrap .family>li{position: relative;}
+    #footer .footer_wrap .family>li>a{font-size: 12px; color: #FFF; text-align: left; line-height: 2.5em; }
+/*
+    #footer .footer_wrap .bot_lnb>li:last-child>.family{position: absolute; width: 100%; left: 0 ; top: 0;}
+    #footer .footer_wrap .bot_lnb>li:last-child>.family>li>a{font-size: 12px; color: #FFF; text-align: left; line-height: 2.5em; }
+*/
+   
+    #footer .footer_wrap .common_info{position: relative; overflow: hidden; margin: 20px 0}
+    #footer .footer_wrap .common_info>li{float: left;}
+    #footer .footer_wrap .common_info>li>address{font-size: 12px; color: #FFF; font-style: normal;}
+    #footer .footer_wrap .common_info>li>p{font-size: 12px; color: #FFF; }
+    #footer .footer_wrap .common_info>li>.info_text::after{content: '|'; padding: 0 10px}
+    #footer .footer_wrap .bot_logo{width: 100px;}
+    #footer .footer_wrap .bot_logo>img{width: 100%}
+    #footer .footer_wrap .copyright{position: absolute; font-size: 12px; color: #FFF; right: 0; bottom: 80px}
+    #footer .footer_wrap .copyright>span{color: #15AD60}
+    #footer .footer_wrap .sns_icons{position: absolute; overflow: hidden; right: 0; bottom: 0}
+    #footer .footer_wrap .sns_icons>li{float: left; margin-left: 20px}
+    #footer .footer_wrap .sns_icons>li>a>img{width: 100%}
+    
+    
+}
+
+
+
+
+/* 테블릿 가로=========================================================*/
+/*===================================================================*/
+@media screen and (min-width:801px) and (max-width:1200px){
+    /*    header------------------------------------------*/
+    #header{position: fixed; width: 100%; height: 80px; left: 0; top: 0; z-index: 999 }
+    #header .header_wrap{position: relative; width: 100%; margin: 0 auto;}
+    #header .header_wrap .top_logo{position: absolute; left: 50px; top: 22px; width: 160px;  }
+    #header .header_wrap .top_logo img{width: 100%;}
+    #header .header_wrap .gnb{position: absolute; width: 50%; left: 340px; display: none}
+    #header .header_wrap .gnb ul{overflow: hidden}
+    #header .header_wrap .gnb ul li{float: left; padding: 0 30px}
+    #header .header_wrap .gnb ul li a{text-align: center; line-height: 80px; color: #FFF; font-weight: 700; }
+    #header .header_wrap .gnb ul li:hover a{color:#15AD60}
+    #header .header_wrap .util{position: absolute; right: 50px; top: 25px; cursor: pointer}
+    
+    
+    
+    
+    
+/*    sub nav---------------------------------------*/
+    .sub_nav{position: fixed; width: 100%; height: 400px; left: 0; top: 80px; background-color: rgba(255,255,255,0.7); z-index: 50; display: none}
+    .sub_nav .sub_nav_inner{position: relative; width: 1200px; height: 400px; margin: 0 auto; }
+    .sub_nav .sub_nav_inner>.dep1{position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 101; display: none}
+    .sub_nav .sub_nav_inner>.dep1>img{position: absolute; margin-top: 100px}
+    .sub_nav .sub_nav_inner>.dep1>li{position: relative; width: 160px; height: 50%; text-align: center; line-height: 200px; margin-left: 360px; border-right: 1px solid #DDD; cursor: pointer; font-weight: 700}
+   
+    .sub_nav .sub_nav_inner>.introduce>li{height: 33.3%; line-height: 133px;cursor: pointer}
+    .sub_nav .sub_nav_inner>.bussiness>li>.dep2{position: absolute; width: 160px; left: 160px; top: 0; border-right: 1px solid #DDD; display: none; z-index: 102}
+    .sub_nav .sub_nav_inner>.bussiness>li>.tech{top: -200px}
+    .sub_nav .sub_nav_inner>.bussiness>li>.dep2>li>a{font-weight: 700}
+    
+    
+    .total_nav{position: fixed; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0.7); z-index: 99; display: none}
+    .total_nav .close_nav{position: absolute; right: 50px; top: 50px; }
+    .total_nav .close_nav>p{font-size: 50px; color: #FFF; transform: rotate(45deg); cursor: pointer}
+    .total_nav>ul{position: relative; width: 70%; margin: 10% auto; overflow: hidden}
+    .total_nav>ul>li{float: left; width: 23%; margin: 1% }
+    .total_nav>ul>li>a{font-size: 18px; color: #FFF; text-align: center; line-height: 2em;  border-bottom: 1px solid #FFF; letter-spacing: -1px}
+    .total_nav>ul>li>ul>li>a{font-size: 15px; color: #FFF; text-align: center; line-height: 3em; }   
+    .total_nav>ul>li:first-child>ul>li>a::before{content: '·'; margin-right: 5px;}
+    .total_nav>ul>li>ul>li>ul>li>a{color: #FFF; text-align: center; line-height: 3em; }
+    .total_nav>ul>li>ul>li>ul{display: none}
+    
+    
+    
+    
+/*    top banner-----------------------------------    */
+    #top_banner{position: relative; width: 100%;}
+    #top_banner video{display: block; width: 100%; z-index: 0}
+    #top_banner .btn_controls{position: absolute; right: 10px; bottom: 50px}
+    #top_banner .btn_controls>ul{overflow: hidden}
+    #top_banner .btn_controls>ul>li{float: left; margin: 10px; cursor: pointer}
+    
+    
+    
+    
+    
+/*    행복 실현 글로번 건설리더------------------------------------    */
+    #global_leader{display: none}
+    
+    
+    
+/*    모바일_글로벌 리더*/
+    #m_global_leader{position: relative; width:100%; height: 700px; background-color: #2D2D2D; overflow: hidden}
+    #m_global_leader .bg_global{position: absolute; right: -260px; top: 0; display: none}
+    #m_global_leader .triangle{transition-duration: 5s}
+    #m_global_leader .moving_bg1{position: absolute; left: 0; top: 0}
+    #m_global_leader .moving_bg2{position: absolute; right: 0; bottom: 0; width: 500px}
+    
+    #m_global_leader .contents_gl{position: relative; width: 50%; margin: 0 auto; }
+    #m_global_leader .contents_gl .content_title{position: relative;font-size: 28px; color: #FFF; margin-top: 50px; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 80px; opacity: 0} 
+    
+    #m_global_leader .contents_gl .symbol_box{position: relative; width: 100%; height: 600px; }
+    #m_global_leader .contents_gl .symbol_box .main_symbol{position: relative; margin: 0 auto; margin-top: 50px}
+    #m_global_leader .contents_gl .symbol_box .main_symbol>img{width: 100%}
+    #m_global_leader .contents_gl .symbol_box .slogan{position: absolute; font-size: 24px; text-align: center; line-height: 1.2em; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); left: 50%; margin-left: -150px; top: 30%; ; }    
+    #m_global_leader .contents_gl .symbol_box .text_box{position: absolute; width: 230px; transition-duration: 1s; display: none}
+    #m_global_leader .contents_gl .symbol_box .text_box>.title_deco{position: absolute; width: 50px; height: 50px; left: -30px; top: 12px; background-color: #15AD60;}
+    #m_global_leader .contents_gl .symbol_box .text_box>h4{position: relative; font-size: 22px; text-align: left; line-height: 1.2em; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); border-bottom: 2px solid #15AD60; ; margin-bottom: 10px; padding-bottom: 8px;}
+    #m_global_leader .contents_gl .symbol_box .text_box>p{color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); text-align: left; line-height: 1.6em; font-weight: 400; }
+    #m_global_leader .contents_gl .symbol_box>.text_box1{width: 180px; left:-200px; top: 200px}
+    #m_global_leader .contents_gl .symbol_box>.text_box1>.title_deco{left: 160px}
+    #m_global_leader .contents_gl .symbol_box>.text_box1>h4{text-align: right}
+    #m_global_leader .contents_gl .symbol_box>.text_box1>p{text-align: right}
+    #m_global_leader .contents_gl .symbol_box>.text_box2{right: -100px; top: -50px}
+    #m_global_leader .contents_gl .symbol_box>.text_box3{bottom:100px; right: -50px}
+    
+    
+/*   사업영역 ---------------------------------------------------- */
+    #bussiness{position: relative; width: 100%; height: 400px; margin-top: 100px; overflow: hidden}
+    
+    
+    #bussiness .l_btn{position: absolute; left:255px; bottom: 10px; margin-top: -25px; z-index: 10}
+    #bussiness .l_btn>img{margin: 0 auto}
+    #bussiness .r_btn{position: absolute; left: 300px; bottom: 10px; margin-top: -25px; z-index: 10}
+    #bussiness .r_btn>img{margin: 0 auto}
+    
+    
+       
+    #bussiness .lnb_bs{position: absolute; left: 0; top: 0; width: 200px; height: 400px; background-color: #15AD60; z-index: 20;}    
+    #bussiness .lnb_bs .white_deco{position: absolute; left: 0; top: 0; width: 100%; height: 130px; background-color: #FFF}
+    #bussiness .lnb_bs>h2{position: relative; font-size: 22px; color: #333; text-align: center; margin-top: 20px;}
+    #bussiness .lnb_bs .under_triangle{position: absolute; z-index: 10; width: 0; height: 0; border-top: 20px solid #FFF; border-left: 100px solid transparent; border-right: 100px solid transparent; margin-top:78px} 
+    #bussiness .lnb_bs .category{position: absolute; width: 200px; }
+    #bussiness .lnb_bs .category .ca_title{font-size: 32px; line-height: 1.6em; text-align: center}
+    #bussiness .lnb_bs .category .ca_list{margin-top: 70px}
+    #bussiness .lnb_bs .category .ca_list>li{font-size: 16px; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); text-align: center; line-height: 1.8em; cursor: pointer}
+    #bussiness .lnb_bs .category .ca_list>li:hover{background-color: #148F50}
+    #bussiness .lnb_bs .ca_cons{display: none}
+    
+    #bussiness .contents_bs{position: relative; overflow: hidden}
+    #bussiness .contents_bs .slider_wrap_bs{position: relative; width: 200%; overflow: hidden}
+    #bussiness .contents_bs .slider_wrap_bs::after{content: ''; display: block; clear: both}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page{position: relative; float: left; width: 50%;  }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.img_box{position: relative; width: 100%; height: 400px; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.img_box>li{position: absolute; left: 0; top: 0; width: 100%; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.img_box>li>img{}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.slogan_bs{position: absolute; width: 750px; text-align: center; font-size: 22px; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); left: 50%; margin-left: -275px; top: 35%}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>a{position: absolute; font-size: 14px; color: #FFF; text-align: center; width: 300px; border: 1px solid #FFF; line-height: 2em; left: 50%; margin-left: -50px; bottom: 150px}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.controls_bs{position: absolute; overflow: hidden; bottom: 10%; left: 50%; margin-left: -12px; width: 225px; height: 10px; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page:last-child>.controls_bs{width: 595px; left: 50%; margin-left: -55px}
+    
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.controls_bs>li{position: relative; float: left; width: 35px; height: 4px; background-color: #FFF; margin: 0 5px}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.controls_bs>li.select{background-color: #15AD60}
+    
+    
+    
+    
+    
+/*    아이콘 및 보도자료---------------------------------------------------    */
+    #brand_news{position: relative; overflow: hidden}
+    #brand_news .triangle{transition-duration: 5s}
+    #brand_news .moving_bg3{position: absolute; left: 0; top: 0; width: 30%; }
+    #brand_news .moving_bg4{position: absolute; right: 0; bottom: 0; width: 20%; }
+        
+    #brand_info{position: relative;}   
+    #brand_info .brand_wrap{position: relative; width: 100% ;padding-top: 100px; margin-bottom: 50px}
+    #brand_info .brand_wrap .slogan_brand{position: relative; font-size: 26px; text-align: center; top: 100px; opacity: 0}
+    #brand_info .brand_wrap>p{position: relative; font-size: 16px; text-align: center; margin: 50px 0; top: 100px; opacity: 0}
+    #brand_info .brand_wrap .info_box{position: relative; overflow: hidden}
+    #brand_info .brand_wrap .info_box>li{position: relative; float: left; width: 21%; margin: 2%; padding: 0 2%; box-sizing: border-box; top: 200px; opacity: 0}
+    #brand_info .brand_wrap .info_box>li>img{position: absolute; left: 0; top: 0; width: 150px}
+    #brand_info .brand_wrap .info_box>li>h3{font-size: 14px; margin: 5px 0; margin-top: 150px}
+    #brand_info .brand_wrap .info_box>li>h4{font-size: 18px; text-align: right}
+    #brand_info .brand_wrap .info_box>li>h4>span{font-size: 50px; padding: 0 5px}
+    
+    
+    #news{position: relative; background-color: #2D2D2D; overflow: hidden}
+    #news .news_wrap{position: relative; width: 100%; padding-top: 50px}
+    #news .news_wrap .title_news{position: relative; font-size: 36px; text-align: center; color: #FFF; margin-bottom: 50px; top: 200px; opacity: 0}
+    #news .news_wrap .articles{position: relative; overflow: hidden}
+    #news .news_wrap .articles>li{position: relative; float: left; width: 48%; margin: 50px 1%; top: 200px; opacity: 0}
+    #news .news_wrap .articles>li>ul{overflow: hidden}
+    #news .news_wrap .articles>li>ul>li{float: left;}
+    #news .news_wrap .articles>li>ul>.img_news{width: 98%;; margin-right: 1%}
+    #news .news_wrap .articles>li>ul>.img_news>img{width: 100%}
+    #news .news_wrap .articles>li>ul>.text_news{width: 98%; margin-left: 1%; padding: 10px; box-sizing: border-box}
+    #news .news_wrap .articles>li>ul>.text_news>.news_title{font-size: 16px; text-align: left; color: #FFF; padding-bottom: 20px; border-bottom: 1px solid #15AD60}
+    #news .news_wrap .articles>li>ul>.text_news>.news_text{display: none; }
+    #news .news_wrap .articles>li>ul>.text_news>.time{display: none}
+    
+    
+    
+    
+    
+/*     중간 배너------------------------------------------------------  */
+    #mid_banner{position: relative; width: 100%; height: 200px; background-image: url(../img/bgcover_large.png), url(../img/mid_banner.jpg); background-position: center; background-size: cover;}
+    #mid_banner .slogan_mid_banner{position: absolute; width:100%; left: 50%; margin-left: -50%; top: 50%; margin-top: -50px;}
+    #mid_banner .slogan_mid_banner>h2{position: relative; font-size: 26px; color: #FFF; text-align: center; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 200px; opacity: 0}
+   
+    
+    
+    
+    
+/*    주요 프로젝트----------------------------------------------------    */
+    #projects{position: relative; width: 100%; height: 800px; overflow: hidden}
+    #projects .skew_wrap{position: absolute; width: 100%; height: 800px; left: 0; top: 0}
+    #projects .title_projects{position: relative; font-size: 36px; text-align: center; color: #FFF; padding-top: 50px; z-index: 99; top: 200px; opacity: 0}
+    
+    #projects .skew_wrap .bg_projects{position: absolute; width: 100%; height: 800px; left: 0; top: 0; overflow: hidden}
+    #projects .skew_wrap .bg_projects>li{position: absolute; float: left; left: 0; top: 0}
+    #projects .skew_wrap .bg_projects>li>img{width: 1920px}
+    #projects .skew_img{position: absolute; width: 2120px; height: 480px; left: 60%; margin-left: -2020px;  top: 50%; margin-top: -240px;}
+    
+    #projects .skew_wrap .bg_cover_wide{position: absolute; left: 0; top: 0}
+    #projects .skew_wrap .bg_cover_wide>img{width: 1920px}
+    #projects .skew_img::after{content: ""; display: block; clear: both}
+    #projects .skew_img>li{position: relative; float: left; transform: perspective(150px) rotateY(-5deg) scale(0.8); transition-duration: 0.7s}
+    #projects .skew_img>li:last-child{transform: perspective(150px) rotateY(0deg) scale(1);}
+    #projects .skew_text{position: absolute; width: 28%; left: 55%; top: 50%; margin-top: -150px; z-index: 99; min-width: 360px}
+    #projects .skew_text>li{position: absolute; left: 0; top: 0; padding: 20px; display: none; background-color: #2D2D2D}
+    #projects .skew_text>li:last-child{display: block}
+    #projects .skew_text>li .title_deco{position: absolute; width: 70px; height: 70px; background-color: #15AD60; left: -13px; top: -13px}
+    #projects .skew_text>li h2{position: relative; font-size: 24px; color: #FFF; border-bottom: 2px solid #15AD60;}
+    #projects .skew_text>li p{font-size: 15px; color: #FFF; line-height: 1.6em; padding: 50px 0}
+   
+    #projects .prev_btn{position: absolute;  left: 50%; margin-left: -200px; bottom: 70px; z-index: 999; cursor: pointer;}
+    #projects .next_btn{position: absolute;  left: 50%; margin-left: 10px; bottom: 70px; z-index: 999; cursor: pointer}
+    #projects .btn_tooltip{position: absolute; top: -5px; color: #FFF; text-align: center; display: none}
+    #projects .prev_btn .btn_tooltip{right: 30px}
+    #projects .next_btn .btn_tooltip{left: 30px}
+    
+    
+    
+    
+/*    홍보영상 -----------------------------------------------------------    */
+    #prom_video{position: relative; padding: 50px; 0; overflow: hidden; margin-bottom: 50px}
+    #prom_video>.triangle{position: absolute; transition-duration: 1s}
+    #prom_video>.moving_bg5{left: 0; top: 0; width: 30%}
+    #prom_video>.moving_bg6{right: 0; bottom: 0}
+    #prom_video .video_wrap{position: relative; width:100%; padding-bottom: 56.25%; margin: 0 auto}
+    #prom_video .video_wrap>.title_prom{position: relative; font-size: 36px; text-align: center; margin-bottom: 50px; top: 200px; opacity: 0}
+    #prom_video .video_wrap>iframe{position: absolute; width: 100%; height: 100%; display: block;}
+    
+    
+    
+    
+    
+/*  하단 배너 ------------------------------------------------           */
+    #bottom_banner{position: relative; height: 200px; background-image: url(../img/bgcover.png), url(../img/bottom_banner.jpg); background-position: center; background-size: cover}
+    #bottom_banner .slogan_bottom_banner{position: absolute; width: 610px; left: 50%; margin-left: -305px; top: 50%; margin-top: -30px}
+    #bottom_banner .slogan_bottom_banner>h2{position: relative; font-size: 26px; color: #FFF; text-align: center; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 200px; opacity: 0}
+    
+    
+    
+    
+    
+/*  footer----------------------------------------------------------*/
+    #footer{position: relative; background-color: #2D2D2D; padding: 50px 0}
+    #footer .footer_wrap{position: relative; width: 98%; margin: 0 auto}
+    
+    #footer .footer_wrap .bot_lnb{position: relative; overflow: hidden; margin: 20px 0}
+    #footer .footer_wrap .bot_lnb>li{float: left}
+    #footer .footer_wrap .bot_lnb>li>a{font-size: 12px; color: #FFF; text-align: center}
+    #footer .footer_wrap .bot_lnb>li>a::after{content: '|'; color: #FFF; padding: 0 15px}
+    #footer .footer_wrap .bot_lnb>li:hover>a{color: #15AD60}
+    #footer .footer_wrap .bot_lnb>li:last-child{position: a; width: 120px; font-size: 12px; color: #FFF; cursor: pointer}
+    #footer .footer_wrap .bot_lnb>li:last-child:hover{color: #15AD60}
+    
+    
+    #footer .footer_wrap .family{position: absolute; width: 120px; height: 180px; right: 500px; bottom: 20px; transition-duration: 1s; display: none;}
+    #footer .footer_wrap .family>li{position: relative;}
+    #footer .footer_wrap .family>li>a{font-size: 12px; color: #FFF; text-align: left; line-height: 2.5em; }
+/*
+    #footer .footer_wrap .bot_lnb>li:last-child>.family{position: absolute; width: 100%; left: 0 ; top: 0;}
+    #footer .footer_wrap .bot_lnb>li:last-child>.family>li>a{font-size: 12px; color: #FFF; text-align: left; line-height: 2.5em; }
+*/
+   
+    #footer .footer_wrap .common_info{position: relative; overflow: hidden; margin: 20px 0}
+    #footer .footer_wrap .common_info>li{float: left;}
+    #footer .footer_wrap .common_info>li>address{font-size: 12px; color: #FFF; font-style: normal;}
+    #footer .footer_wrap .common_info>li>p{font-size: 12px; color: #FFF; }
+    #footer .footer_wrap .common_info>li>.info_text::after{content: '|'; padding: 0 10px}
+    #footer .footer_wrap .bot_logo{width: 100px;}
+    #footer .footer_wrap .bot_logo>img{width: 100%}
+    #footer .footer_wrap .copyright{position: absolute; font-size: 12px; color: #FFF; right: 0; bottom: 80px}
+    #footer .footer_wrap .copyright>span{color: #15AD60}
+    #footer .footer_wrap .sns_icons{position: absolute; overflow: hidden; right: 0; bottom: 0}
+    #footer .footer_wrap .sns_icons>li{float: left; margin-left: 20px}
+    #footer .footer_wrap .sns_icons>li>a>img{width: 100%}
+    
+}
+
+
+
+/* 테블릿 세로===================================================================*/
+/*=============================================================================*/
+@media screen and (min-width:601px) and (max-width:800px){
+    /*    header------------------------------------------*/
+    #header{position: fixed; width: 100%; height: 80px; left: 0; top: 0; z-index: 999 }
+    #header .header_wrap{position: relative; width: 100%; margin: 0 auto;}
+    #header .header_wrap .top_logo{position: absolute; left: 50px; top: 22px; width: 160px;  }
+    #header .header_wrap .top_logo img{width: 100%;}
+    #header .header_wrap .gnb{position: absolute; width: 50%; left: 340px; display: none}
+    #header .header_wrap .gnb ul{overflow: hidden}
+    #header .header_wrap .gnb ul li{float: left; padding: 0 30px}
+    #header .header_wrap .gnb ul li a{text-align: center; line-height: 80px; color: #FFF; font-weight: 700;}
+    #header .header_wrap .gnb ul li:hover a{color:#15AD60}
+    #header .header_wrap .util{position: absolute; right: 50px; top: 25px; cursor: pointer}
+    
+    
+    
+    
+    
+/*    sub nav---------------------------------------*/
+    .sub_nav{position: fixed; width: 100%; height: 400px; left: 0; top: 80px; background-color: rgba(255,255,255,0.7); z-index: 50; display: none}
+    .sub_nav .sub_nav_inner{position: relative; width: 1200px; height: 400px; margin: 0 auto; }
+    .sub_nav .sub_nav_inner>.dep1{position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 101; display: none}
+    .sub_nav .sub_nav_inner>.dep1>img{position: absolute; margin-top: 100px}
+    .sub_nav .sub_nav_inner>.dep1>li{position: relative; width: 160px; height: 50%; text-align: center; line-height: 200px; margin-left: 360px; border-right: 1px solid #DDD; cursor: pointer; font-weight: 700}
+   
+    .sub_nav .sub_nav_inner>.introduce>li{height: 33.3%; line-height: 133px;cursor: pointer}
+    .sub_nav .sub_nav_inner>.bussiness>li>.dep2{position: absolute; width: 160px; left: 160px; top: 0; border-right: 1px solid #DDD; display: none; z-index: 102}
+    .sub_nav .sub_nav_inner>.bussiness>li>.tech{top: -200px}
+    .sub_nav .sub_nav_inner>.bussiness>li>.dep2>li>a{font-weight: 700}
+    
+    
+    .total_nav{position: fixed; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0.7); z-index: 99; display: none}
+    .total_nav .close_nav{position: absolute; right: 50px; top: 50px; }
+    .total_nav .close_nav>p{font-size: 50px; color: #FFF; transform: rotate(45deg); cursor: pointer}
+    .total_nav>ul{position: relative; width: 70%; margin: 10% auto; overflow: hidden}
+    .total_nav>ul>li{float: left; width: 48%; height: 200px; margin: 1%}
+    .total_nav>ul>li>a{font-size: 18px; color: #FFF; text-align: center; line-height: 2em; letter-spacing: -1px; border-bottom: 1px solid #FFF}
+    .total_nav>ul>li>ul>li>a{font-size: 16px; color: #FFF; text-align: center; line-height: 3em;}   
+    .total_nav>ul>li:first-child>ul>li>a::before{content: '·'; margin-right: 5px;}
+    .total_nav>ul>li>ul>li>ul>li>a{font-size: 12px; color: #FFF; text-align: center; line-height: 3em; }
+    .total_nav>ul>li>ul>li>ul{display: none}
+    
+    
+    
+    
+/*    top banner-----------------------------------    */
+    #top_banner{position: relative; width: 100%;}
+    #top_banner video{display: block; width: 100%; z-index: 0}
+    #top_banner .btn_controls{position: absolute; right: 10px; bottom: 50px}
+    #top_banner .btn_controls>ul{overflow: hidden}
+    #top_banner .btn_controls>ul>li{float: left; margin: 10px; cursor: pointer}
+    
+    
+    
+    
+    
+/*    행복 실현 글로번 건설리더------------------------------------    */
+    #global_leader{display: none}
+    
+    
+    
+/*    모바일_글로벌 리더*/
+    #m_global_leader{position: relative; width:100%; height: 700px; background-color: #2D2D2D; overflow: hidden}
+    #m_global_leader .bg_global{position: absolute; right: -260px; top: 0; display: none}
+    #m_global_leader .triangle{transition-duration: 5s}
+    #m_global_leader .moving_bg1{position: absolute; left: 0; top: 0}
+    #m_global_leader .moving_bg2{position: absolute; right: 0; bottom: 0; width: 500px}
+    
+    #m_global_leader .contents_gl{position: relative; width: 50%; margin: 0 auto; }
+    #m_global_leader .contents_gl .content_title{position: relative;font-size: 28px; color: #FFF; margin-top: 50px; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 80px; opacity: 0} 
+    
+    #m_global_leader .contents_gl .symbol_box{position: relative; width: 100%; height: 600px; }
+    #m_global_leader .contents_gl .symbol_box .main_symbol{position: relative; margin: 0 auto; margin-top: 50px}
+    #m_global_leader .contents_gl .symbol_box .main_symbol>img{width: 100%}
+    #m_global_leader .contents_gl .symbol_box .slogan{position: absolute; font-size: 24px; text-align: center; line-height: 1.2em; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); left: 50%; margin-left: -150px; top: 30%; ; }    
+    #m_global_leader .contents_gl .symbol_box .text_box{position: absolute; width: 230px; transition-duration: 1s; display: none}
+    #m_global_leader .contents_gl .symbol_box .text_box>.title_deco{position: absolute; width: 50px; height: 50px; left: -30px; top: 12px; background-color: #15AD60;}
+    #m_global_leader .contents_gl .symbol_box .text_box>h4{position: relative; font-size: 22px; text-align: left; line-height: 1.2em; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); border-bottom: 2px solid #15AD60; ; margin-bottom: 10px; padding-bottom: 8px;}
+    #m_global_leader .contents_gl .symbol_box .text_box>p{color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); text-align: left; line-height: 1.6em; font-weight: 400; }
+    #m_global_leader .contents_gl .symbol_box>.text_box1{width: 180px; left:-200px; top: 200px}
+    #m_global_leader .contents_gl .symbol_box>.text_box1>.title_deco{left: 160px}
+    #m_global_leader .contents_gl .symbol_box>.text_box1>h4{text-align: right}
+    #m_global_leader .contents_gl .symbol_box>.text_box1>p{text-align: right}
+    #m_global_leader .contents_gl .symbol_box>.text_box2{right: -100px; top: -50px}
+    #m_global_leader .contents_gl .symbol_box>.text_box3{bottom:100px; right: -150px}
+    
+    
+    
+    
+    
+/*   사업영역 ---------------------------------------------------- */
+    #bussiness{position: relative; width: 100%; height: 400px; margin-top: 100px;  }
+    
+    
+    #bussiness .l_btn{position: absolute; left:205px; bottom: 10px; margin-top: -25px; z-index: 10}
+    #bussiness .l_btn>img{width: 70%; margin: 0 auto}
+    #bussiness .r_btn{position: absolute; left: 230px; bottom: 10px; margin-top: -25px; z-index: 10}
+    #bussiness .r_btn>img{width: 70%; margin: 0 auto}
+    
+    
+       
+    #bussiness .lnb_bs{position: absolute; left: 0; top: 0; width: 200px; height: 400px; background-color: #15AD60; z-index: 20;}    
+    #bussiness .lnb_bs .white_deco{position: absolute; left: 0; top: 0; width: 100%; height: 120px; background-color: #FFF}
+    #bussiness .lnb_bs>h2{position: relative; font-size: 20px; color: #333; text-align: center; margin-top: 20px;}
+    #bussiness .lnb_bs .under_triangle{position: absolute; z-index: 10; width: 0; height: 0; border-top: 20px solid #FFF; border-left: 100px solid transparent; border-right: 100px solid transparent; margin-top:71px} 
+    #bussiness .lnb_bs .category{position: absolute; width: 200px; }
+    #bussiness .lnb_bs .category .ca_title{font-size: 28px; line-height: 1.6em; text-align: center}
+    #bussiness .lnb_bs .category .ca_list{margin-top: 80px}
+    #bussiness .lnb_bs .category .ca_list>li{font-size: 16px; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); text-align: center; line-height: 1.8em; cursor: pointer}
+    #bussiness .lnb_bs .category .ca_list>li:hover{background-color: #148F50}
+    #bussiness .lnb_bs .ca_cons{display: none}
+    
+    
+    #bussiness .contents_bs{position: relative; overflow: hidden}
+    #bussiness .contents_bs .slider_wrap_bs{position: relative; width: 200%; overflow: hidden}
+    #bussiness .contents_bs .slider_wrap_bs::after{content: ''; display: block; clear: both}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page{position: relative; float: left; width: 50%; overflow: hidden; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.img_box{position: relative; width: 100%; height: 400px; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.img_box>li{position: absolute; left: 0; top: 0; width: 100%; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.img_box>li>img{}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.slogan_bs{position: absolute; width: 750px; text-align: center; font-size: 18px; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); left: 50%; margin-left: -275px; top: 35%}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>a{position: absolute; font-size: 12px; color: #FFF; text-align: center; width: 300px; border: 1px solid #FFF; line-height: 2em; left: 50%; margin-left: -50px; bottom: 150px}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.controls_bs{position: absolute; overflow: hidden; bottom: 20%; left: 50%; margin-left: -12px; width: 225px; height: 10px; }
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page:last-child>.controls_bs{width: 595px; left: 50%; margin-left: -55px}
+    
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.controls_bs>li{position: relative; float: left; width: 35px; height: 4px; background-color: #FFF; margin: 0 5px}
+    #bussiness .contents_bs .slider_wrap_bs>.slider_page>.controls_bs>li.select{background-color: #15AD60}
+    
+    
+    
+    
+    
+/*    아이콘 및 보도자료---------------------------------------------------    */
+    #brand_news{position: relative; overflow: hidden}
+    #brand_news .triangle{transition-duration: 5s}
+    #brand_news .moving_bg3{position: absolute; left: 0; top: 0; width: 30%; }
+    #brand_news .moving_bg4{position: absolute; right: 0; bottom: 0; width: 20%; }
+        
+    #brand_info{position: relative;}   
+    #brand_info .brand_wrap{position: relative; width: 100% ;padding-top: 100px; margin-bottom: 50px}
+    #brand_info .brand_wrap .slogan_brand{position: relative; font-size: 22px; text-align: center; top: 100px; opacity: 0}
+    #brand_info .brand_wrap>p{position: relative; font-size: 14px; text-align: center; margin: 50px 0; top: 100px; opacity: 0}
+    #brand_info .brand_wrap .info_box{position: relative; overflow: hidden}
+    #brand_info .brand_wrap .info_box>li{position: relative; float: left; width: 21%; margin: 2%; padding: 0 2%; box-sizing: border-box; top: 200px; opacity: 0}
+    #brand_info .brand_wrap .info_box>li>img{position: absolute; left: 0; top: 0; width: 120px}
+    #brand_info .brand_wrap .info_box>li>h3{font-size: 12px; margin: 5px 0; margin-top: 140px}
+    #brand_info .brand_wrap .info_box>li>h4{font-size: 16px; text-align: right}
+    #brand_info .brand_wrap .info_box>li>h4>span{font-size: 30px; padding: 0 5px}
+    
+    
+    #news{position: relative; background-color: #2D2D2D}
+    #news .news_wrap{position: relative; width: 100%; padding-top: 50px}
+    #news .news_wrap .title_news{position: relative; font-size: 28px; text-align: center; color: #FFF;; top: 200px; opacity: 0}
+    #news .news_wrap .articles{position: relative; overflow: hidden}
+    #news .news_wrap .articles>li{position: relative; float: left; width: 48%; margin: 50px 1%; top: 200px; opacity: 0}
+    #news .news_wrap .articles>li>ul{overflow: hidden}
+    #news .news_wrap .articles>li>ul>li{float: left;}
+    #news .news_wrap .articles>li>ul>.img_news{width: 98%;; margin-right: 1%}
+    #news .news_wrap .articles>li>ul>.img_news>img{width: 100%}
+    #news .news_wrap .articles>li>ul>.text_news{width: 98%; margin-left: 1%; padding: 10px; box-sizing: border-box}
+    #news .news_wrap .articles>li>ul>.text_news>.news_title{font-size: 16px; text-align: left; color: #FFF; padding-bottom: 20px; border-bottom: 1px solid #15AD60}
+    #news .news_wrap .articles>li>ul>.text_news>.news_text{display: none; }
+    #news .news_wrap .articles>li>ul>.text_news>.time{display: none}
+    
+    
+    
+    
+    
+/*     중간 배너------------------------------------------------------  */
+    #mid_banner{position: relative; width: 100%; height: 200px; background-image: url(../img/bgcover_large.png), url(../img/mid_banner.jpg); background-position: center; background-size: cover}
+    #mid_banner .slogan_mid_banner{position: absolute; width: 100%; left: 50%; margin-left: -50%; top: 50%; margin-top: -50px;}
+    #mid_banner .slogan_mid_banner>h2{position: relative; font-size: 22px; color: #FFF; text-align: center; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 200px; opacity: 0}
+   
+    
+    
+    
+    
+/*    주요 프로젝트----------------------------------------------------    */
+    #projects{display: none; position: relative; width: 100%; height: 800px; overflow: hidden}
+    #projects .skew_wrap{position: absolute; width: 100%; height: 800px; left: 0; top: 0}
+    #projects .title_projects{position: relative; font-size: 26px; text-align: center; color: #FFF; padding-top: 50px; z-index: 99; top: 200px; opacity: 0}
+    
+    #projects .skew_wrap .bg_projects{position: absolute; width: 100%; height: 800px; left: 0; top: 0; overflow: hidden}
+    #projects .skew_wrap .bg_projects>li{position: absolute; float: left; left: 0; top: 0}
+    #projects .skew_wrap .bg_projects>li>img{width: 1920px}
+    #projects .skew_img{position: absolute; width: 2120px; height: 480px; left: 60%; margin-left: -2020px;  top: 50%; margin-top: -240px;}
+    
+    #projects .skew_wrap .bg_cover_wide{position: absolute; left: 0; top: 0}
+    #projects .skew_wrap .bg_cover_wide>img{width: 1920px}
+    #projects .skew_img::after{content: ""; display: block; clear: both}
+    #projects .skew_img>li{position: relative; float: left; transform: perspective(150px) rotateY(-5deg) scale(0.8); transition-duration: 0.7s}
+    #projects .skew_img>li:last-child{transform: perspective(150px) rotateY(0deg) scale(1);}
+    #projects .skew_text{position: absolute; width: 28%; left: 60%; top: 50%; margin-top: -150px; z-index: 99; min-width: 400px}
+    #projects .skew_text>li{position: absolute; left: 0; top: 0; padding: 20px; display: none; background-color: #2D2D2D}
+    #projects .skew_text>li:last-child{display: block}
+    #projects .skew_text>li .title_deco{position: absolute; width: 70px; height: 70px; background-color: #15AD60; left: -13px; top: -13px}
+    #projects .skew_text>li h2{position: relative; font-size: 24px; color: #FFF; border-bottom: 2px solid #15AD60;}
+    #projects .skew_text>li p{font-size: 16px; color: #FFF; line-height: 1.6em; padding: 50px 0}
+   
+    #projects .prev_btn{position: absolute;  left: 50%; margin-left: -200px; bottom: 70px; z-index: 999; cursor: pointer;}
+    #projects .next_btn{position: absolute;  left: 50%; margin-left: 10px; bottom: 70px; z-index: 999; cursor: pointer}
+    #projects .btn_tooltip{position: absolute; top: -5px; color: #FFF; text-align: center; display: none}
+    #projects .prev_btn .btn_tooltip{right: 30px}
+    #projects .next_btn .btn_tooltip{left: 30px}
+    
+    
+    
+    
+/*    홍보영상 -----------------------------------------------------------    */
+    #prom_video{position: relative; padding: 50px; 0; overflow: hidden; margin-bottom: 50px}
+    #prom_video>.triangle{position: absolute; transition-duration: 1s}
+    #prom_video>.moving_bg5{left: 0; top: 0; width: 30%}
+    #prom_video>.moving_bg6{right: 0; bottom: 0}
+    #prom_video .video_wrap{position: relative; width:100%; padding-bottom: 56.25%; margin: 0 auto}
+    #prom_video .video_wrap>.title_prom{position: relative; font-size: 22px; text-align: center; margin-bottom: 50px; top: 200px; opacity: 0}
+    #prom_video .video_wrap>iframe{position: absolute; width: 100%; height: 100%; display: block;}
+    
+    
+    
+    
+    
+/*  하단 배너 ------------------------------------------------           */
+    #bottom_banner{position: relative; height: 200px; background-image: url(../img/bgcover.png), url(../img/bottom_banner.jpg); background-position: center; background-size: cover}
+    #bottom_banner .slogan_bottom_banner{position: absolute; width: 610px; left: 50%; margin-left: -305px; top: 50%; margin-top: -30px}
+    #bottom_banner .slogan_bottom_banner>h2{position: relative; font-size: 22px; color: #FFF; text-align: center; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 200px; opacity: 0}
+    
+    
+    
+    
+    
+/*  footer----------------------------------------------------------*/
+    #footer{position: relative; background-color: #2D2D2D; padding: 50px 10px}
+    #footer .footer_wrap{position: relative; width: 100%; margin: 0 auto}
+    
+    #footer .footer_wrap .bot_lnb{position: relative; overflow: hidden; margin: 20px 0}
+    #footer .footer_wrap .bot_lnb>li{float: left}
+    #footer .footer_wrap .bot_lnb>li>a{font-size: 12px; color: #FFF; text-align: center}
+    #footer .footer_wrap .bot_lnb>li>a::after{content: '|'; color: #FFF; padding: 0 15px}
+    #footer .footer_wrap .bot_lnb>li:hover>a{color: #15AD60}
+    #footer .footer_wrap .bot_lnb>li:last-child{position: a; width: 120px; font-size: 12px; color: #FFF; cursor: pointer}
+    #footer .footer_wrap .bot_lnb>li:last-child:hover{color: #15AD60}
+    
+    
+    #footer .footer_wrap .family{position: absolute; width: 120px; height: 180px; right: 500px; bottom: 20px; transition-duration: 1s; display: none;}
+    #footer .footer_wrap .family>li{position: relative;}
+    #footer .footer_wrap .family>li>a{font-size: 12px; color: #FFF; text-align: left; line-height: 2.5em; }
+/*
+    #footer .footer_wrap .bot_lnb>li:last-child>.family{position: absolute; width: 100%; left: 0 ; top: 0;}
+    #footer .footer_wrap .bot_lnb>li:last-child>.family>li>a{font-size: 12px; color: #FFF; text-align: left; line-height: 2.5em; }
+*/
+   
+    #footer .footer_wrap .common_info{position: relative; overflow: hidden; margin: 20px 0}
+    #footer .footer_wrap .common_info>li{float: left;}
+    #footer .footer_wrap .common_info>li>address{font-size: 12px; color: #FFF; font-style: normal;}
+    #footer .footer_wrap .common_info>li>p{font-size: 12px; color: #FFF; }
+    #footer .footer_wrap .common_info>li>.info_text::after{content: '|'; padding: 0 10px}
+    #footer .footer_wrap .bot_logo{width: 100px; }
+    #footer .footer_wrap .bot_logo>img{width: 100%}
+    #footer .footer_wrap .copyright{position: absolute; font-size: 12px; color: #FFF; right: 30px; bottom: 50px}
+    #footer .footer_wrap .copyright>span{color: #15AD60}
+    #footer .footer_wrap .sns_icons{position: absolute; overflow: hidden; right: 0; bottom: 0}
+    #footer .footer_wrap .sns_icons>li{float: left; margin-left: 20px}
+    #footer .footer_wrap .sns_icons>li>a>img{width: 100%}
+    
+   
+}
+
+/* 모바일==========================================================*/
+/*================================================================*/
+@media screen and (max-width:600px){
+    /*    header------------------------------------------*/
+    #header{position: fixed; width: 100%; height: 60px; left: 0; top: 0; z-index: 999 }
+    #header .header_wrap{position: relative; width: 100%; margin: 0 auto;}
+    #header .header_wrap .top_logo{position: relative; width: 160px; margin: 0 auto; margin-top: 16px}
+    #header .header_wrap .top_logo img{width: 100%;}
+    #header .header_wrap .gnb{position: absolute; width: 50%; left: 340px; display: none}
+    #header .header_wrap .gnb ul{overflow: hidden}
+    #header .header_wrap .gnb ul li{float: left; padding: 0 30px}
+    #header .header_wrap .gnb ul li a{text-align: center; line-height: 80px; color: #FFF; font-weight: 700;}
+    #header .header_wrap .gnb ul li:hover a{color:#15AD60}
+    #header .header_wrap .util{position: absolute; right: 10px; top: 0; cursor: pointer}
+    
+    
+    
+    
+    
+/*    sub nav---------------------------------------*/
+    .sub_nav{position: fixed; width: 100%; height: 400px; left: 0; top: 80px; background-color: rgba(255,255,255,0.7); z-index: 50; display: none}
+    .sub_nav .sub_nav_inner{position: relative; width: 1200px; height: 400px; margin: 0 auto; }
+    .sub_nav .sub_nav_inner>.dep1{position: absolute; width: 100%; height: 100%; left: 0; top: 0; z-index: 101; display: none}
+    .sub_nav .sub_nav_inner>.dep1>img{position: absolute; margin-top: 100px}
+    .sub_nav .sub_nav_inner>.dep1>li{position: relative; width: 160px; height: 50%; text-align: center; line-height: 200px; margin-left: 360px; border-right: 1px solid #DDD; cursor: pointer; font-weight: 700}
+   
+    .sub_nav .sub_nav_inner>.introduce>li{height: 33.3%; line-height: 133px;cursor: pointer}
+    .sub_nav .sub_nav_inner>.bussiness>li>.dep2{position: absolute; width: 160px; left: 160px; top: 0; border-right: 1px solid #DDD; display: none; z-index: 102}
+    .sub_nav .sub_nav_inner>.bussiness>li>.tech{top: -200px}
+    .sub_nav .sub_nav_inner>.bussiness>li>.dep2>li>a{font-weight: 700}
+    
+    
+   .total_nav{position: fixed; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,0.7); z-index: 99; display: none}
+    .total_nav .close_nav{position: absolute; right: 5px; top: 5px; }
+    .total_nav .close_nav>p{font-size: 50px; color: #FFF; transform: rotate(45deg); cursor: pointer}
+    .total_nav>ul{position: relative; width: 89%; margin: 50px auto; overflow: hidden}
+    .total_nav>ul>li{float: left; width:98%; height: 200px; margin: 1%}
+    .total_nav>ul>li>a{font-size: 18px; color: #FFF; text-align: center; line-height: 2em; letter-spacing: -1px; border-bottom: 1px solid #FFF}
+    .total_nav>ul>li>ul>li>a{font-size: 16px; color: #FFF; text-align: center; line-height: 3em;}   
+    .total_nav>ul>li:first-child>ul>li>a::before{content: '·'; margin-right: 5px;}
+    .total_nav>ul>li>ul>li>ul>li>a{font-size: 12px; color: #FFF; text-align: center; line-height: 3em; }
+    .total_nav>ul>li>ul>li>ul{display: none}
+    
+    
+    
+    
+/*    top banner-----------------------------------    */
+    #top_banner{position: relative; width: 100%;}
+    #top_banner video{display: block; width: 100%; z-index: 0}
+    #top_banner .btn_controls{position: absolute; right: 10px; bottom: 10px}
+    #top_banner .btn_controls>ul{overflow: hidden}
+    #top_banner .btn_controls>ul>li{float: left; margin: 10px; cursor: pointer}
+    
+    
+    
+    
+    
+/*    행복 실현 글로번 건설리더------------------------------------    */
+    #global_leader{display: none}
+    
+    
+    
+/*    모바일_글로벌 리더*/
+    #m_global_leader{position: relative; width:100%; background-color: #2D2D2D; overflow: hidden}
+    #m_global_leader .bg_global{display: none}
+    #m_global_leader .triangle{display: none}
+    
+    
+    #m_global_leader .contents_gl{position: relative; width: 100%; margin: 0 auto; }
+    #m_global_leader .contents_gl .content_title{position: relative;font-size: 20px; color: #FFF; margin: 20px 0; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 80px; opacity: 0; text-align: center} 
+    
+    #m_global_leader .contents_gl .symbol_box{position: relative; width: 100%;}
+    #m_global_leader .contents_gl .symbol_box .main_symbol{display: none}
+    #m_global_leader .contents_gl .symbol_box .slogan{position: relative; font-size: 16px; text-align: center; line-height: 1.2em; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); padding: 15px 0; background-color: #15AD60; }    
+    #m_global_leader .contents_gl .symbol_box .text_box{position: relative; width: 200px; transition-duration: 1s; display: none; margin: 25px auto}
+    #m_global_leader .contents_gl .symbol_box .text_box>.title_deco{position: absolute; width: 50px; height: 50px; left: -30px; top: 2px; background-color: #15AD60;}
+    #m_global_leader .contents_gl .symbol_box .text_box>h4{position: relative; font-size: 18px; text-align: left; line-height: 1.2em; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); border-bottom: 2px solid #15AD60; ; margin-bottom: 10px; padding-bottom: 8px;}
+    #m_global_leader .contents_gl .symbol_box .text_box>p{font-size: 14px; color: #FFF; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); text-align: left; line-height: 1.6em; font-weight: 400; }
+   
+    
+
+   
+    
+    
+    
+    
+    
+    
+/*   사업영역 ---------------------------------------------------- */
+    #bussiness{display: none}
+    
+    
+    
+/*    아이콘 및 보도자료---------------------------------------------------    */
+    #brand_news{position: relative; overflow: hidden}
+    #brand_news .triangle{display: none}
+            
+    #brand_info{position: relative;}   
+    #brand_info .brand_wrap{position: relative; width: 100%; padding-top: 100px; margin-bottom: 50px}
+    #brand_info .brand_wrap .slogan_brand{position: relative; font-size: 18px; text-align: center; top: 100px; opacity: 0}
+    #brand_info .brand_wrap>p{position: relative; font-size: 12px; text-align: center; margin: 50px 0; top: 100px; opacity: 0}
+    #brand_info .brand_wrap .info_box{position: relative; overflow: hidden}
+    #brand_info .brand_wrap .info_box>li{position: relative; float: left; width: 46%; margin: 2%; padding: 0 2%; box-sizing: border-box; top: 200px; opacity: 0}
+    #brand_info .brand_wrap .info_box>li>img{position: absolute; left: 0; top: 0; width: 100px}
+    #brand_info .brand_wrap .info_box>li>h3{font-size: 12px; margin: 5px 0; margin-top: 100px}
+    #brand_info .brand_wrap .info_box>li>h4{font-size: 16px; text-align: center}
+    #brand_info .brand_wrap .info_box>li>h4>span{font-size: 30px; padding: 0 5px}
+    
+    
+    #news{position: relative; background-color: #2D2D2D}
+    #news .news_wrap{position: relative; width: 100%; padding-top: 50px}
+    #news .news_wrap .title_news{position: relative; font-size: 22px; text-align: center; color: #FFF; top: 200px; opacity: 0}
+    #news .news_wrap .articles{position: relative;}
+    #news .news_wrap .articles>li{position: relative; margin: 50px 1%; top: 200px; opacity: 0}
+    
+    #news .news_wrap .articles>li>ul>.img_news{width: 70%; margin: 0 auto; min-width: 320px}
+    #news .news_wrap .articles>li>ul>.img_news>img{width: 100%}
+    #news .news_wrap .articles>li>ul>.text_news{width: 70%; margin: 0 auto; padding: 10px; box-sizing: border-box; min-width: 320px}
+    #news .news_wrap .articles>li>ul>.text_news>.news_title{font-size: 16px; text-align: left; color: #FFF; padding-bottom: 20px; border-bottom: 1px solid #15AD60}
+    #news .news_wrap .articles>li>ul>.text_news>.news_text{display: none; }
+    #news .news_wrap .articles>li>ul>.text_news>.time{display: none}
+    
+    
+    
+    
+    
+/*     중간 배너------------------------------------------------------  */
+    #mid_banner{position: relative; width: 100%; height: 200px; background-image: url(../img/bgcover_large.png), url(../img/mid_banner.jpg); background-position: center; background-size: cover}
+    #mid_banner .slogan_mid_banner{position: absolute; width: 100%; left: 50%; margin-left: -50%; top: 35%; }
+    #mid_banner .slogan_mid_banner>h2{position: relative; font-size: 18px; color: #FFF; text-align: center; text-shadow: 1px 1px 1px rgba(0,0,0,0.5);}
+   
+    
+    
+    
+    
+/*    주요 프로젝트----------------------------------------------------    */
+    #projects{display: none}
+        
+    
+    
+    
+/*    홍보영상 -----------------------------------------------------------    */
+    #prom_video{position: relative; padding: 50px; 0; overflow: hidden; margin-bottom: 50px}
+    #prom_video>.triangle{display: none}    
+    #prom_video .video_wrap{position: relative; width:100%; padding-bottom: 56.25%; margin: 0 auto}
+    #prom_video .video_wrap>.title_prom{position: relative; font-size: 22px; text-align: center; margin-bottom: 50px; top: 200px; opacity: 0}
+    #prom_video .video_wrap>iframe{position: absolute; width: 100%; height: 100%; display: block;}
+    
+    
+    
+    
+    
+/*  하단 배너 ------------------------------------------------           */
+    #bottom_banner{position: relative; height: 200px; background-image: url(../img/bgcover.png), url(../img/bottom_banner.jpg); background-position: center; background-size: cover}
+    #bottom_banner .slogan_bottom_banner{position: absolute; width: 100%; left: 50%; margin-left: -50%; top: 50%; margin-top: -30px}
+    #bottom_banner .slogan_bottom_banner>h2{position: relative; font-size: 18px; color: #FFF; text-align: center; text-shadow: 1px 1px 1px rgba(0,0,0,0.5); top: 200px; opacity: 0}
+    
+    
+    
+    
+    
+/*  footer----------------------------------------------------------*/
+    #footer{position: relative; background-color: #2D2D2D; padding: 50px 10px}
+    #footer .footer_wrap{position: relative; width: 100%; margin: 0 auto}
+    
+    #footer .footer_wrap .bot_lnb{position: relative; overflow: hidden; margin: 20px 0}
+    #footer .footer_wrap .bot_lnb>li{float: left}
+    #footer .footer_wrap .bot_lnb>li>a{font-size: 12px; color: #FFF; text-align: center}
+    #footer .footer_wrap .bot_lnb>li>a::after{content: '|'; color: #FFF; padding: 0 15px}
+    #footer .footer_wrap .bot_lnb>li:hover>a{color: #15AD60}
+    #footer .footer_wrap .bot_lnb>li:last-child{position: a; width: 120px; font-size: 12px; color: #FFF; cursor: pointer}
+    #footer .footer_wrap .bot_lnb>li:last-child:hover{color: #15AD60}
+    
+    
+    #footer .footer_wrap .family{position: absolute; width: 120px; height: 180px; right: 500px; bottom: 20px; transition-duration: 1s; display: none;}
+    #footer .footer_wrap .family>li{position: relative;}
+    #footer .footer_wrap .family>li>a{font-size: 12px; color: #FFF; text-align: left; line-height: 2.5em; }
+/*
+    #footer .footer_wrap .bot_lnb>li:last-child>.family{position: absolute; width: 100%; left: 0 ; top: 0;}
+    #footer .footer_wrap .bot_lnb>li:last-child>.family>li>a{font-size: 12px; color: #FFF; text-align: left; line-height: 2.5em; }
+*/
+   
+    #footer .footer_wrap .common_info{position: relative; overflow: hidden; margin: 20px 0}
+    #footer .footer_wrap .common_info>li{float: left;}
+    #footer .footer_wrap .common_info>li>address{font-size: 12px; color: #FFF; font-style: normal;}
+    #footer .footer_wrap .common_info>li>p{font-size: 12px; color: #FFF; }
+    #footer .footer_wrap .common_info>li>.info_text::after{content: '|'; padding: 0 10px}
+    #footer .footer_wrap .bot_logo{width: 100px; }
+    #footer .footer_wrap .bot_logo>img{width: 100%}
+    #footer .footer_wrap .copyright{position: absolute; font-size: 12px; color: #FFF; right: 30px; bottom: 50px}
+    #footer .footer_wrap .copyright>span{color: #15AD60}
+    #footer .footer_wrap .sns_icons{position: absolute; overflow: hidden; right: 0; bottom: 0}
+    #footer .footer_wrap .sns_icons>li{float: left; margin-left: 20px}
+    #footer .footer_wrap .sns_icons>li>a>img{width: 100%}
+    
+    
+}
